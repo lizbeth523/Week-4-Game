@@ -1,0 +1,40 @@
+body {
+	background-image: url("../images/congruent_pentagon.png");
+}
+
+h1 {
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-size: 2em;
+	font-weight: bold;
+	padding: 1em;
+}
+
+header {
+	background-color: #CA722B;
+	color: #FBFEFB;
+	text-align: center;
+	width: 40%;
+}
+
+.container {
+	margin: auto;
+	width: 960px;
+}
+
+.game-description {
+	background-color: #F6DBA5;
+	color: #54A951;
+	font-weight: bold;
+	padding: 1em;
+	width: 50%;
+}
+
+.number {
+	height: 6em;
+}
+
+#random-number {
+	background-color: #5CC87D;
+	color: #67236A;
+	width: 40%;
+}

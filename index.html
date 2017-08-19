@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script
+ 		src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	  	integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+		crossorigin="anonymous">
+	</script>
+	<script src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<h1>Crystals Collector!</h1>
+		</header>
+
+		<div class="game-description">
+		    <p>
+		    	You will be given a random number at the start of the game.
+		    </p>
+		    <p><h2>
+		     	There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.
+		    </p>
+		    <p>
+		     	You win the game by matching your total score to a random number. You lose the game if your score goes above the random number.
+		    </p>
+		    <p>
+		     	The value of each crystal is hidden from you until you click on it.
+		    </p>
+		    <p>
+		     	Each time when the game starts, the game will change the values of each crystal.
+		    </p>
+		</div> <!-- end div class="game-description" -->
+
+		<!-- Random number that user needs to score to win -->
+		<div id="random-number" class="number"></div>
+
+		<div class="stats">
+			<p>
+				Wins: <span id="wins"><!--Number of wins will be displayed here--></span>
+			</p>
+			<p>
+				Losses: <span id="losses"><!-- Number of losses will be displayed here--></span>
+			</p>
+		</div> <!-- end div class="stats" -->
+
+		<div class="score-label">
+			Your total score is:
+		</div> <!-- end div class="score-label" -->
+
+		<!-- User's current score -->
+		<div id="score" class="number"></div>
+
+		<footer>	
+		</footer>
+	</div> <!-- end div class="container" -->
+</body>
+</html>
