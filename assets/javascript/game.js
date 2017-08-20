@@ -22,10 +22,15 @@ $(document).ready( function()
 	
 	setupGame();
 	
-	// click handler for crystal images
+	// Click handler for crystal images
 	$(".crystal-img").on("click", function () {
+		// Add the value of the crystal that was clicked to the score
 		score += parseInt($(this).attr("data-crystalValue"));
+
+		// Update the score display
 		$("#score").html("<h1>" + score + "</h1>");
+
+		// Check the score vs target score to determine if user has won or lost
 		checkScore();
 	});
 
@@ -45,7 +50,6 @@ $(document).ready( function()
 			msg = "You lost!";
 			notifyResults();
 			setupGame();
-		}
 	}
 
 	// Return a random number between min and max
