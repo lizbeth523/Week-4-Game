@@ -50,6 +50,7 @@ $(document).ready( function()
 			msg = "You lost!";
 			notifyResults();
 			setupGame();
+		}
 	}
 
 	// Return a random number between min and max
