@@ -1,19 +1,30 @@
 body {
 	background-image: url("../images/congruent_pentagon.png");
+	padding-top: 0.5em;
+}
+
+div {
+	margin: 0.5em;
 }
 
 h1 {
 	font-family: Georgia, Times, 'Times New Roman', serif;
 	font-size: 2em;
 	font-weight: bold;
-	padding: 1em;
+	padding-bottom: 1em;
+	padding-top: 1em;
 }
 
 header {
 	background-color: #CA722B;
 	color: #FBFEFB;
+	margin-left: 0.5em;
 	text-align: center;
 	width: 40%;
+}
+
+p {
+	margin: 1em;
 }
 
 .container {
@@ -21,20 +32,82 @@ header {
 	width: 960px;
 }
 
+.crystal-img {
+	width: 12%;
+}
+
+.crystals {
+	clear: both;
+}
+
 .game-description {
 	background-color: #F6DBA5;
 	color: #54A951;
 	font-weight: bold;
-	padding: 1em;
+	padding-bottom: 1em;
+	padding-top: 1em;
 	width: 50%;
 }
 
 .number {
 	height: 6em;
+	padding-left: 0.5em;
+	width: 30%;
+}
+
+.score-label {
+	clear: both;
+	font-size: 1.1em;
+	padding: 0.5em 0 0.5em 0.5em;
+	width: 30%;
+}
+
+.stats {
+	background-color: #4BFDFE;
+	height: 5em;
+	float: left;
+	line-height: 1.5;
+	padding: 0.5em;
+}
+
+.turquoise {
+	background-color: #2CA194;
+	color: #CDE9F0;
 }
 
 #random-number {
 	background-color: #5CC87D;
 	color: #67236A;
-	width: 40%;
+	float: left;
+}
+
+@media screen and (max-width: 640px) {
+	header {
+		width: 100%;
+	}
+
+	.container {
+		width: 85%;
+	}
+
+	.crystal-img {
+		width: 24%;
+	}
+
+	.game-description {
+		padding: 2.5%;
+		width: 95%;
+	}
+
+	.number {
+		width: 52%;
+	}
+
+	.score-label {
+		width: 52%;
+	}
+
+	.stats {
+		width: 31%;
+	}
 }

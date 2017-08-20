@@ -2,13 +2,14 @@
 <html lang="en-us">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Crystal Collector Game</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<script
- 		src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-	  	integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-		crossorigin="anonymous">
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous">
 	</script>
 	<script src="assets/javascript/game.js"></script>
 </head>
@@ -23,7 +24,7 @@
 		    <p>
 		    	You will be given a random number at the start of the game.
 		    </p>
-		    <p><h2>
+		    <p>
 		     	There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.
 		    </p>
 		    <p>
@@ -41,6 +42,7 @@
 		<div id="random-number" class="number"></div>
 
 		<div class="stats">
+			<p id="result-notification"></p>
 			<p>
 				Wins: <span id="wins"><!--Number of wins will be displayed here--></span>
 			</p>
@@ -49,12 +51,19 @@
 			</p>
 		</div> <!-- end div class="stats" -->
 
-		<div class="score-label">
+		<div class="crystals">
+			<img src="assets/images/amethyst.jpg" alt="amethyst" id="amethyst" class="crystal-img">
+			<img src="assets/images/sapphire.jpg" alt="sapphire" id="sapphire" class="crystal-img">
+			<img src="assets/images/emerald.jpg" alt="emerald" id="emerald" class="crystal-img">
+			<img src="assets/images/ruby.jpg" alt="ruby" id="ruby" class="crystal-img">
+		</div> <!-- end div class="crystals" -->
+
+		<div class="score-label turquoise">
 			Your total score is:
 		</div> <!-- end div class="score-label" -->
 
 		<!-- User's current score -->
-		<div id="score" class="number"></div>
+		<div id="score" class="number turquoise"></div>
 
 		<footer>	
 		</footer>
